@@ -15,9 +15,6 @@ body {
   margin: 1rem;
   font-family: sans-serif;
   line-height: 1.5;
-  
-   background: rgb(150,32,137);
-   background: linear-gradient(90deg, rgba(150,32,137,1) 0%, rgba(212,150,100,1) 35%, rgba(225,233,104,1) 69%, rgba(0,212,255,1) 100%); 
 }
 
 /* images and videos max out at full width */
