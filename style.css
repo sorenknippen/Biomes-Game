@@ -33,15 +33,15 @@ video {
 }
 
 .floating-class {
-  background: #FE5F55; /*orangey red*/
+  background: #fe5f55; /*orangey red*/
   animation: floating;
-  animation-duration: 4s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
 
 .float-later {
-  background: #9F86C0; /*lilac*/
+  background: #9f86c0; /*lilac*/
   margin-top: 20px;
 }
 
@@ -54,12 +54,26 @@ video {
 
 @keyframes floating {
   0% {
-    transform: translate(0,0px);
+    transform: translateY(0px);
   }
   50% {
-    transform: translate(0,15px);
+    transform: translateY(15px);
   }
-  100% {
-    transform: translate(0,-0px);
+  100%  {
+    transform: translateY(-0px);
+  }
+}
+
+.my-animation-div {
+  margin-top: 20px;
+  animation: 
+}
+
+@keyframes change-color {
+  from {
+    background: red;
+  }
+  to {
+    background: yellow;
   }
 }
