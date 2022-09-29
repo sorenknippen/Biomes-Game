@@ -26,10 +26,26 @@ video {
   max-width: 100%;
 }
 
-.floating-class {
+.square {
+  padding: 10px;
   height: 100px;
   width: 100px;
-  background: rgb(200, 200, 100);
+}
+
+.floating-class {
+  background: #FE5F55; /*orangey red*/
+  animation: floating;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.float-later {
+  background: #9F86C0; /*lilac*/
+  margin-top: 20px;
+}
+
+.float-later:hover {
   animation: floating;
   animation-duration: 4s;
   animation-iteration-count: infinite;
