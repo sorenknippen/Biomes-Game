@@ -77,3 +77,7 @@ video {
     background: yellow;
   }
 }
+body {
+ background-image: url("https://images.squarespace-cdn.com/content/v1/603439257f4b9a6cf2cf0ec7/1621017976889-4NHRPGK1R4W1XMFI2WIK/alligators-in-the-everglades.jpg?format=2500w");
+ background-color: #cccccc;
+}
