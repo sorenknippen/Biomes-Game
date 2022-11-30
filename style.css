@@ -32,6 +32,12 @@ video {
   width: 100px;
     background: green;
 }
+.square-2 {
+  padding: 10px;
+  height: 400px;
+  width: 400px;
+    background: green;
+}
 
 .floating-class {
   background: #fe5f55; /*orangey red*/
