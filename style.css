@@ -32,16 +32,14 @@ video {
   height: 100px;
   width: 100px;
     background: green;
-  font-family: sans-serif;
   text-align: center;
-  text-align: middle;
+  
 }
 .square-2 {
   padding: 10px;
   height: 400px;
   width: 400px;
     background: green;
-  font-family: sans-serif;
 }
 
 .floating-class {
@@ -50,7 +48,6 @@ video {
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  font-family: sans-serif;
 }
 
 .float-later {
@@ -94,5 +91,6 @@ body {
  background-color: brown;
   b ackground-image: url("https://images.squarespace-cdn.com/content/v1/603439257f4b9a6cf2cf0ec7/1621017976889-4NHRPGK1R4W1XMFI2WIK/alligators-in-the-everglades.jpg?format=2500w");
  background-color: #6C584C;
+  text-align: center;
 }
 
