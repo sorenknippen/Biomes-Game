@@ -138,3 +138,121 @@ button {
 .container .btn:hover {
   background-color: black;
   color: white;
+
+  
+  /* Racing Game */
+  @charset "utf-8";
+/* CSS Document */
+body {
+    text-align: center;
+}
+h1 { 
+  padding: 0px;
+  margin:0px;
+  font-family:"Comic Sans MS", cursive, sans-serif;
+}
+h2 { 
+  padding: 0px;
+  margin:0px;
+}
+#RaceTrack {
+  background-color: green;
+ 
+    height: 300px;
+    border-right: dashed 30px white;
+    box-sizing: border-box;
+    margin: 5px 0;
+}
+.Car {
+    display: block;
+    position: relative;
+}
+#Car1 {
+    top: 15px;
+}
+#Car2 {
+    top: 20px;
+}
+#Car3 {
+    top: 30px;
+}
+#Car4 {
+    top: 40px;
+}
+#RaceInfoCntnr {
+    width: 80%;
+    margin: 40px auto 0;
+    background: #333;
+    height: 200px;
+}
+#RaceInfoCntnr h2 {
+    color: white;
+    text-transform: uppercase;
+    border-bottom: solid 1px white;
+    padding 20px 0;
+}
+.RaceInfo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    width: 50%;
+    float: left;
+}
+.RaceInfo span {
+    display: block;
+    font-weight: normal;
+    font-size: 18px;
+    color: white;
+}
+#RaceInfo1 {
+    color: #77B82f;
+}
+#RaceInfo2 {
+    color: #B82F3E;
+}
+input[type="button"] {
+    background: #77b72f;
+    color: white;
+    padding: 10px 20px;
+    border: solid 1px #444;
+}
+input#Reset {
+    background: #fc3;
+    color: #444;
+}
+.ClearFix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+  background-color: turquoise;
+}
+#bowie {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+  background-image: url('https://www.usmd.edu/images/featured_institutions/athletics/bsu-bulldog.png');
+   background-size:50px 50px;
+   vertical-align: text-bottom;
+}
+
+#coppin {
+  width: 50px;
+  height: 50px;
+  margin-top: 100px;
+  position: absolute;
+  //background-color: red;
+  background-image: url('https://www.usmd.edu/images/featured_institutions/athletics/csu-eagle.png');
+  background-size:50px 50px;
+  margin-top; 
+}
+#race-field {
+  width: 700px;
+  height: 400px;
+  position: relative;
+  background: green;
+  border-right: 22px dashed white;
+}
