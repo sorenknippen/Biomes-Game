@@ -1,42 +1,64 @@
-<html>
-<body id="Race">
-  <h1>Shala's</h1> 
-  <h2>College Race Game</h2>
-    <input type="button" style="background-color:red;" value="Race!" id="Go">
-    <input type="button" style="background-color:yellow;" value="Reset" id="Reset">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
 
-    <div id="RaceTrack">
-        <img id="Car1" class="Car" src="https://fanapeel.com/wp-content/uploads/logo_-university-of-maryland-terrapins-testudo-turtle-hold-red-white-m-300x300.png" height="50px" alt="Testudo"> 
- 
-      <img id="Car2" class="Car" src="https://www.pngkey.com/png/full/142-1424655_format-towson-university-tiger.png" height="50px" alt="Tiger">
-      
-      <img id="Car3" class="Car" src="https://cdn.prestosports.com/action/cdn/logos/rpi/622/msoc.png" height="50px" alt="Seagull">
-    
-  
-      <img id="Car4" class="Car" src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/UMBC_Retrievers_logo.svg/400px-UMBC_Retrievers_logo.svg.png" height="50px" alt="Retrievers">
+    <title>Hello world!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <h1>Sample Game Functions</h1>
+
+    <p class="points-container">Points: <span id="points">0</span></p>
+
+    <div class="example activeDiv" onclick="setMainCharacter('penguin1', this)">
+      <p>Example 1: Get a Coin</p>
+      <div class="main-character" id="penguin1"></div>
+      <div id="coin">
+        <img
+          src="https://cdn.glitch.global/f3fb5275-d3c4-40d6-8322-524e015f4c18/coin.gif?v=1668651506508"
+          alt="Coin"
+        />
       </div>
-
-
-    <div id="RaceInfoCntnr" class="ClearFix">
-        <h2>Results</h2>
-        <div id="RaceInfo1" class="RaceInfo">Bulldog<span></span>
-        </div>
-        <div id="RaceInfo2" class="RaceInfo">Eagle <span></span>
-        </div>
-      <div id="RaceInfo3" class="RaceInfo">Seagull <span></span>
-        </div>
-       <div id="RaceInfo4" class="RaceInfo">Bulldog <span></span>
-        </div>
-      
+      <div id="pointplus">+1</div>
     </div>
 
-    <!--Load CDN First-->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!--If CDN Fails to load, serve up the local version-->
-    <script>
-        window.jQuery || document.write('<script src="jQuery.js"><\/script>');
-    </script>
-</body>
-    <script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/src/html5shiv.js"></script>
-    <! [endif] -->
+    <div
+      class="example"
+      id="enemy-example"
+      onclick="setMainCharacter('penguin2', this)"
+    >
+      <p>Example 2: Collide With Enemy</p>
+      <div class="main-character" id="penguin2"></div>
+      <div class="enemy"></div>
+    </div>
+
+    <div class="example" onclick="setMainCharacter('penguin3', this)">
+      <p>Example 3: Drop in Treasure Chest</p>
+      <div id="treasure-chest" class="glow"></div>
+
+      <div class="main-character" id="penguin3">
+        <div class="held-item" id="treasure"></div>
+      </div>
+    </div>
+    
+    <div id="treasure-collection">
+      <p>Treasure Collection</p>
+    </div>
+  </body>
 </html>
